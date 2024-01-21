@@ -12,7 +12,7 @@ https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDat
  - sentence_transformers
  - sklearn.metrics.pairwise
  - json
-   
+ - -
  - pprint
 
 ## 작동방법
