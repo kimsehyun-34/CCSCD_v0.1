@@ -6,14 +6,12 @@ Court case search chatbot for Discord
 ## 데이터 출처 : AI-Hub
 https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=data&dataSetSn=580
 
-## 사용 라이브러리 ()
+## 사용 라이브러리 (설치할것)
  - discord.py
  - pandas
  - sentence_transformers
  - sklearn.metrics.pairwise
  - json
- - -
- - pprint
 
 ## 작동방법
  - pandas, SentenceTransformer, sklearn 패키지, json 라이브러리 설치
