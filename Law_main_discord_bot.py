@@ -18,9 +18,6 @@ def get_dataset():
 model = cached_model()
 df = get_dataset()
 
-start_sequence = "\nAI:"
-restart_sequence = "\nHuman: "
-
 
 class MyClient(discord.Client):
     async def on_ready(self):
@@ -29,18 +26,12 @@ class MyClient(discord.Client):
         print('Logged on as', self.user)
 
     async def on_message(self, message):
-#
+
         if message.author == self.user:
             return
-        
-#메세지 추출
-        user_input=message.content
 
-
-#기록, 기록 추출
-        
         user_input=message.content
-        #print(message.content)
+        
         embedding = model.encode(user_input)
 
         df['distance'] = df['embedding'].map(lambda x: cosine_similarity([embedding], [x]).squeeze())
@@ -54,9 +45,6 @@ class MyClient(discord.Client):
         print('결론', answer['챗봇'])
         print('죄목', answer['죄목'])
         print('유사도', answer['distance'])
-        
-
-#전송
         
         embed=discord.Embed(title="가상 판결", description="", color=0x588afe)
         embed.set_author(name="법원")
