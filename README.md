@@ -1,5 +1,5 @@
-## Court case search chatbot for Discord
-## 법원 판례 검색 디스코드 챗봇
+# Court case search chatbot for Discord
+# 법원 판례 검색 디스코드 챗봇
 
 ### 민사재판과 행정재판까지 포함된 데이터 파일은 너무 용량이 커서 깃허브에 올리지 못하네요.
 --------
